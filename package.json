@@ -1,20 +1,18 @@
 {
-  "name": "pdf-epub-backend",
+  "name": "pdf-epub-frontend",
   "version": "1.0.0",
-  "description": "PDF to ePub conversion backend",
-  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
+    "dev":   "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "multer": "^1.4.5-lts.1",
-    "cors": "^2.8.5",
-    "pdf-parse": "^1.1.1",
-    "archiver": "^6.0.1",
-    "uuid": "^9.0.0",
-    "tesseract.js": "^5.0.4"
+    "react":     "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0"
   }
 }
